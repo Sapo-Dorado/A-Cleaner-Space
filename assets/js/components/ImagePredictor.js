@@ -1,5 +1,6 @@
 import React from 'react'
 import { predict, getClass } from '../utils/prediction';
+import { countRequest } from '../utils/count';
 
 export default class ImagePredictor extends React.Component {
   constructor(props) {
@@ -20,6 +21,7 @@ export default class ImagePredictor extends React.Component {
           message.innerHTML = "Loading..."
           predict(img).then(prediction => {
             message.innerHTML = getClass(prediction);
+            countRequest('PATCH')
           })
           
         }
