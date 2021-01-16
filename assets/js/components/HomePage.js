@@ -1,6 +1,7 @@
 import React from 'react'
 import ImagePredictor from './ImagePredictor'
 import { countRequest } from '../utils/count';
+import { getClass } from '../utils/prediction';
 
 export default class HomePage extends React.Component {
   constructor(props) {
@@ -26,12 +27,23 @@ export default class HomePage extends React.Component {
     if(this.state.view === "Home"){
       content = (
         <>
-          <p>{this.state.count} Trashcans located</p>
-          <button onClick={this.imageView}>Get Started</button>
+          <div className="title">
+              <h1>A Cleaner Space</h1>
+          </div>
+          <div className="startbtn">
+            <button onClick={this.imageView} className="btn">Get Started</button>
+            <p><strong>{this.state.count} Trashcans located</strong></p>
+          </div>
         </>
       );
     } else {
-      content = <ImagePredictor />;
+      content = (
+        <>
+          <div className="imgprocessing">
+            <ImagePredictor />
+          </div>
+        </>
+      );
     }
     return content
   }

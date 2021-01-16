@@ -1,5 +1,5 @@
 import React from 'react'
-import { predict, getClass } from '../utils/prediction';
+import { predict, getCategory, getType} from '../utils/prediction';
 import { countRequest } from '../utils/count';
 
 export default class ImagePredictor extends React.Component {
@@ -20,7 +20,12 @@ export default class ImagePredictor extends React.Component {
         img.onload = () => {
           message.innerHTML = "Loading..."
           predict(img).then(prediction => {
-            message.innerHTML = getClass(prediction);
+            let category = getCategory(prediction);
+            message.innerHTML = `
+            <strong> Our prediction: </strong>${category}
+            <br />
+            <strong>Bin: </strong>${getType(category)}
+            `;
             countRequest('PATCH')
           })
           
@@ -35,12 +40,24 @@ export default class ImagePredictor extends React.Component {
   }
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-            <img id="image" />
-            <br />
-            <label id="label">Upload an image of your trash and our model will determine the appropriate bin.</label>
+      <div className="imgformcontainer">
+        <form onSubmit={this.handleSubmit}>
+          <img id="image" />
+          <br />
+          <p id="label" className="imglabel">
+            <strong>
+              Upload an image of your trash and
+              <br />
+              our model will determine the appropriate bin.
+            </strong>
+          </p>
+          <br />
+          <label className="btn">
+            Upload Image
             <input type="file" accept="image/*" onChange={this.handleChange}/>
+          </label>
         </form>
+      </div>
     )
   }
 }
