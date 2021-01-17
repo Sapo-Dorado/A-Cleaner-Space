@@ -1,7 +1,7 @@
 import React from 'react'
 import ImagePredictor from './ImagePredictor'
-import { countRequest } from '../utils/count';
-import { getClass } from '../utils/prediction';
+import { countRequest } from '../utils/count'
+import MapContainer from './MapContainer'
 
 export default class HomePage extends React.Component {
   constructor(props) {
@@ -42,6 +42,7 @@ export default class HomePage extends React.Component {
           <div className="imgprocessing">
             <ImagePredictor />
           </div>
+          <MapContainer />
         </>
       );
     }
