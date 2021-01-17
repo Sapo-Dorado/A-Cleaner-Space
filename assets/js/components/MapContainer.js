@@ -151,7 +151,7 @@ class MapContainer extends Component {
 
         <Marker
           name={'trashcan'}
-          position={locations[0]}  // icon not working 
+          position={locations[0]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -160,7 +160,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[1]}  // icon not working 
+          position={locations[1]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -169,7 +169,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[2]}  // icon not working 
+          position={locations[2]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -178,7 +178,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[3]}  // icon not working 
+          position={locations[3]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -187,7 +187,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[4]}  // icon not working 
+          position={locations[4]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -196,7 +196,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[5]}  // icon not working 
+          position={locations[5]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -205,7 +205,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[6]}  // icon not working 
+          position={locations[6]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -214,7 +214,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[7]}  // icon not working 
+          position={locations[7]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -223,7 +223,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[8]}  // icon not working 
+          position={locations[8]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -232,7 +232,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[9]}  // icon not working 
+          position={locations[9]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -241,7 +241,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[10]}  // icon not working 
+          position={locations[10]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -250,7 +250,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[11]}  // icon not working 
+          position={locations[11]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -259,7 +259,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[12]}  // icon not working 
+          position={locations[12]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -268,7 +268,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[13]}  // icon not working 
+          position={locations[13]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -277,7 +277,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[14]}  // icon not working 
+          position={locations[14]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -286,7 +286,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[15]}  // icon not working 
+          position={locations[15]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -295,7 +295,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[16]}  // icon not working 
+          position={locations[16]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -304,7 +304,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[17]}  // icon not working 
+          position={locations[17]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -313,7 +313,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[18]}  // icon not working 
+          position={locations[18]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -322,7 +322,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[19]}  // icon not working 
+          position={locations[19]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -331,7 +331,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[20]}  // icon not working 
+          position={locations[20]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -340,7 +340,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[21]}  // icon not working 
+          position={locations[21]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -349,7 +349,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[22]}  // icon not working 
+          position={locations[22]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -358,7 +358,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[23]}  // icon not working 
+          position={locations[23]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -367,7 +367,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[24]}  // icon not working 
+          position={locations[24]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -376,7 +376,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[25]}  // icon not working 
+          position={locations[25]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -385,7 +385,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[26]}  // icon not working 
+          position={locations[26]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -394,7 +394,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[27]}  // icon not working 
+          position={locations[27]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -403,7 +403,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[28]}  // icon not working 
+          position={locations[28]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -412,7 +412,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[29]}  // icon not working 
+          position={locations[29]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -421,7 +421,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[30]}  // icon not working 
+          position={locations[30]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -430,7 +430,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[31]}  // icon not working 
+          position={locations[31]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -439,7 +439,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[32]}  // icon not working 
+          position={locations[32]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -448,7 +448,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[33]}  // icon not working 
+          position={locations[33]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -457,7 +457,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[34]}  // icon not working 
+          position={locations[34]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -466,7 +466,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[35]}  // icon not working 
+          position={locations[35]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -475,7 +475,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[36]}  // icon not working 
+          position={locations[36]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -484,7 +484,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[37]}  // icon not working 
+          position={locations[37]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -493,7 +493,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[38]}  // icon not working 
+          position={locations[38]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -502,7 +502,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[39]}  // icon not working 
+          position={locations[39]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -511,7 +511,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[40]}  // icon not working 
+          position={locations[40]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -520,7 +520,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[41]}  // icon not working 
+          position={locations[41]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -529,7 +529,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[42]}  // icon not working 
+          position={locations[42]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -538,7 +538,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[43]}  // icon not working 
+          position={locations[43]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -547,7 +547,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[44]}  // icon not working 
+          position={locations[44]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -556,7 +556,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[45]}  // icon not working 
+          position={locations[45]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -565,7 +565,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[46]}  // icon not working 
+          position={locations[46]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -574,7 +574,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[47]}  // icon not working 
+          position={locations[47]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -583,7 +583,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[48]}  // icon not working 
+          position={locations[48]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -592,7 +592,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[49]}  // icon not working 
+          position={locations[49]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -601,7 +601,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[50]}  // icon not working 
+          position={locations[50]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -610,7 +610,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[51]}  // icon not working 
+          position={locations[51]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -619,7 +619,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[52]}  // icon not working 
+          position={locations[52]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -628,7 +628,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[53]}  // icon not working 
+          position={locations[53]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -637,7 +637,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[54]}  // icon not working 
+          position={locations[54]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -646,7 +646,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[55]}  // icon not working 
+          position={locations[55]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -655,7 +655,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[56]}  // icon not working 
+          position={locations[56]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -664,7 +664,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[57]}  // icon not working 
+          position={locations[57]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -673,7 +673,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[58]}  // icon not working 
+          position={locations[58]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -682,7 +682,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[59]}  // icon not working 
+          position={locations[59]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -691,7 +691,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[60]}  // icon not working 
+          position={locations[60]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -700,7 +700,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[61]}  // icon not working 
+          position={locations[61]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -709,7 +709,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[62]}  // icon not working 
+          position={locations[62]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -718,7 +718,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[63]}  // icon not working 
+          position={locations[63]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -727,7 +727,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[64]}  // icon not working 
+          position={locations[64]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -736,7 +736,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[65]}  // icon not working 
+          position={locations[65]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -745,7 +745,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[66]}  // icon not working 
+          position={locations[66]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -754,7 +754,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[67]}  // icon not working 
+          position={locations[67]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -763,7 +763,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[68]}  // icon not working 
+          position={locations[68]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -772,7 +772,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[69]}  // icon not working 
+          position={locations[69]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -781,7 +781,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[70]}  // icon not working 
+          position={locations[70]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -790,7 +790,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[71]}  // icon not working 
+          position={locations[71]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -799,7 +799,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[72]}  // icon not working 
+          position={locations[72]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -808,7 +808,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[73]}  // icon not working 
+          position={locations[73]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -817,7 +817,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[74]}  // icon not working 
+          position={locations[74]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -826,7 +826,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[75]}  // icon not working 
+          position={locations[75]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -835,7 +835,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[76]}  // icon not working 
+          position={locations[76]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -844,7 +844,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[77]}  // icon not working 
+          position={locations[77]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
@@ -853,7 +853,7 @@ class MapContainer extends Component {
         />
         <Marker
           name={'trashcan'}
-          position={locations[78]}  // icon not working 
+          position={locations[78]}   
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
