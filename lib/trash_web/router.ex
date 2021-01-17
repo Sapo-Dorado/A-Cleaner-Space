@@ -19,6 +19,13 @@ defmodule TrashWeb.Router do
     get "/", PageController, :index
   end
 
+  scope "/api", TrashWeb do
+    pipe_through :api
+
+    get "/count", CountController, :index
+    patch "/count", CountController, :update
+  end
+
   # Other scopes may use custom stacks.
   # scope "/api", TrashWeb do
   #   pipe_through :api
