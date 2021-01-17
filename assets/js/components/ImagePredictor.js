@@ -18,16 +18,22 @@ export default class ImagePredictor extends React.Component {
         img.height = 224;
         img.width = 224;
         img.onload = () => {
-          message.innerHTML = "Loading..."
-          predict(img).then(prediction => {
-            let category = getCategory(prediction);
-            message.innerHTML = `
-            <strong> Our prediction: </strong>${category}
-            <br />
-            <strong>Bin: </strong>${getType(category)}
-            `;
-            countRequest('PATCH')
-          })
+          message.innerHTML = `
+            <img src="/images/trashcan.png" class="loading1"/>
+            <img src="/images/trashcan.png" class="loading2"/>
+            <img src="/images/trashcan.png" class="loading3"/>
+          `;
+          setTimeout(() => {
+            predict(img).then(prediction => {
+              let category = getCategory(prediction);
+              message.innerHTML = `
+              <strong> Our prediction: </strong>${category}
+              <br />
+              <strong>Bin: </strong>${getType(category)}
+              `;
+              countRequest('PATCH')
+            })
+          }, 3000);
           
         }
       }

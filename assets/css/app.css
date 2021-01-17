@@ -74,3 +74,87 @@ p {
 input[type="file"] {
     display: none;
 }
+
+@media (prefers-reduced-motion: no-preference) {
+  .loading1 {
+    width: 4%;
+    height: 4%;
+    animation: Loading1 infinite 1.5s linear;
+  }
+  .loading2 {
+    width: 4%;
+    height: 4%;
+    animation: Loading2 infinite 1.5s linear;
+  }
+  .loading3 {
+    width: 4%;
+    height: 4%;
+    animation: Loading3 infinite 1.5s linear;
+  }
+}
+
+@keyframes Loading1 {
+  from {
+    transform: translateY(0%);
+  } 12.5% {
+    transform: translateY(-50%);
+  } 25% {
+    transform: translateY(0%);
+  } 37.5% {
+    transform: translateY(0%);
+  } 50% {
+    transform: translateY(0%);
+  } 62.5% {
+    transform: translateY(0%);
+  } 75% {
+    transform: translateY(0%);
+  } 87.5% {
+    transform: translateY(0%);
+  } to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes Loading2 {
+  from {
+    transform: translateY(0%);
+  } 12.5% {
+    transform: translateY(0%);
+  } 25% {
+    transform: translateY(0%);
+  } 37.5% {
+    transform: translateY(-50%);
+  } 50% {
+    transform: translateY(0%);
+  } 62.5% {
+    transform: translateY(0%);
+  } 75% {
+    transform: translateY(0%);
+  } 87.5% {
+    transform: translateY(-50%);
+  } to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes Loading3 {
+  from {
+    transform: translateY(0%);
+  } 12.5% {
+    transform: translateY(0%);
+  } 25% {
+    transform: translateY(0%);
+  } 37.5% {
+    transform: translateY(0%);
+  } 50% {
+    transform: translateY(0%);
+  } 62.5% {
+    transform: translateY(-50%);
+  } 75% {
+    transform: translateY(0%);
+  } 87.5% {
+    transform: translateY(0%);
+  } to {
+    transform: translateY(0%);
+  }
+}
