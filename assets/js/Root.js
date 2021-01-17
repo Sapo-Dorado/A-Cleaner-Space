@@ -1,13 +1,11 @@
 import React from 'react'
-import MapContainer from './components/MapContainer';
+import HomePage from './components/HomePage';
+
 
 export default class Root extends React.Component {
   render() {
     return (
-      <>
-      <MapContainer />
-        <p>This is a placeholder</p>
-      </>
+      <HomePage />
     );
   }
 }

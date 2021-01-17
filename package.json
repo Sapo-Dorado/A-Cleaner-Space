@@ -8,8 +8,11 @@
   },
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-transform-runtime": "^7.12.10",
     "@babel/preset-react": "^7.12.10",
     "google-maps-react": "^2.0.6",
+    "@babel/runtime": "^7.12.5",
+    "@tensorflow/tfjs": "^2.8.4",
     "phoenix": "file:deps/phoenix",
     "phoenix_html": "file:deps/phoenix_html",
     "prop-types": "^15.7.2",
