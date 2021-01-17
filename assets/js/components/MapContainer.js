@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Map, GoogleApiWrapper, InfoWindow, Marker } from 'google-maps-react';
 import { array } from 'prop-types';
+import CurrentLocation from './CurrentLocation';
 
-const mapStyles = require('../util/mapStyle.json');
-const trashcanImage = '/images/tire.jpg';
+const mapStyles = require('../utils/mapStyle.json');
+const trashcanImage = '/images/trashcan.png';
 
 const locations = [
   {lat: -1.2884, lng: 36.6}, 
@@ -41,7 +42,7 @@ class MapContainer extends Component {
   //     icon={{
   //       url: '/images/tire.jpg',
   //       anchor: new google.maps.Point(0,0),
-  //       scaledSize: new google.maps.Size(16,16)}} 
+  //       scaledSize: new google.maps.Size(32,32)}} 
   //     key={location.lat*1000+location.lng}
   //   />  
   // ));
@@ -59,6 +60,10 @@ class MapContainer extends Component {
           }
         }
       >
+      <Marker 
+          onClick={this.onMarkerClick} 
+          name={'Current Location'} 
+      />
 
         {/* <Marker
           onClick={this.onMarkerClick}  // markers
@@ -67,17 +72,15 @@ class MapContainer extends Component {
         /> */}
 
 
-
-
-
         <Marker
           name={'trashcan'}
           position={{lat: 34.41954468838134, lng: -119.85380064974677}}  // icon not working 
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
-          key={location.lat*1000+location.lng}
+            scaledSize: new google.maps.Size(32,32)}} 
+          //key={location.lat*1000+location.lng}
+          key={location.lat.toString(10)+location.lng.toString(10)}
         />
         <Marker
           name={'trashcan'}
@@ -85,7 +88,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -94,7 +97,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -103,7 +106,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -112,7 +115,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -121,7 +124,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -130,7 +133,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -139,7 +142,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -148,7 +151,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -157,7 +160,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -166,7 +169,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -175,7 +178,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -184,7 +187,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -193,7 +196,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -202,7 +205,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -211,7 +214,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -220,7 +223,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -229,7 +232,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -238,7 +241,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -247,7 +250,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -256,7 +259,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -265,7 +268,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -274,7 +277,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -283,7 +286,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -292,7 +295,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -301,7 +304,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -310,7 +313,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -319,7 +322,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -328,7 +331,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -337,7 +340,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -346,7 +349,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -355,7 +358,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -364,7 +367,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -373,7 +376,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -382,7 +385,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -391,7 +394,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -400,7 +403,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -409,7 +412,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -418,7 +421,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -427,7 +430,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -436,7 +439,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -445,7 +448,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -454,7 +457,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -463,7 +466,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -472,7 +475,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -481,7 +484,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -490,7 +493,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -499,7 +502,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -508,7 +511,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -517,7 +520,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -526,7 +529,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -535,7 +538,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -544,7 +547,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -553,7 +556,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -562,7 +565,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -571,7 +574,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -580,7 +583,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -589,7 +592,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -598,7 +601,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -607,7 +610,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -616,7 +619,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -625,7 +628,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -634,7 +637,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -643,7 +646,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -652,7 +655,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -661,7 +664,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -670,7 +673,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -679,7 +682,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -688,7 +691,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -697,7 +700,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -706,7 +709,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -715,7 +718,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -724,7 +727,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -733,7 +736,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -742,7 +745,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -751,7 +754,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -760,7 +763,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -769,7 +772,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         <Marker
@@ -778,7 +781,7 @@ class MapContainer extends Component {
           icon={{
             url: trashcanImage,
             anchor: new google.maps.Point(0,0),
-            scaledSize: new google.maps.Size(16,16)}} 
+            scaledSize: new google.maps.Size(32,32)}} 
           key={location.lat*1000+location.lng}
         />
         
