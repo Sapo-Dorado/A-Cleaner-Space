@@ -75,6 +75,11 @@ input[type="file"] {
     display: none;
 }
 
+.mapdiv {
+  width: 75%;
+  height: 30%;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .loading1 {
     width: 4%;

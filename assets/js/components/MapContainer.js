@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
 import { Map, GoogleApiWrapper, InfoWindow, Marker } from 'google-maps-react';
-import { array } from 'prop-types';
-import CurrentLocation from './CurrentLocation';
 
-const mapStyles = require('../utils/mapStyle.json');
 const trashcanImage = '/images/trashcan.png';
+
+const mapStyles = {
+  position: 'relative',
+  width: '50%',
+  height: '40%',
+  left: '50%',
+  transform: 'translateX(-50%)'
+};
 
 const locations = [
   {lat:34.41954468838134, lng: -119.85380064974677},
@@ -110,26 +115,12 @@ class MapContainer extends Component {
     }
   };
 
-
-
-  // const markers = locations.map((location) => (
-  //   <Marker
-  //     name={'trashcan'}
-  //     position={location}  // icon working 
-  //     icon={{
-  //       url: '/images/tire.jpg',
-  //       anchor: new google.maps.Point(0,0),
-  //       scaledSize: new google.maps.Size(32,32)}} 
-  //     key={location.lat*1000+location.lng}
-  //   />  
-  // ));
-
   render() {
     return (
       <Map
         google={this.props.google}
         zoom={16}  // determine size of starting screen
-        style={this.props.mapStyles}
+        style={mapStyles}
         initialCenter={
           {
             lat: 34.41397173154447,  // starting location
@@ -141,13 +132,6 @@ class MapContainer extends Component {
           onClick={this.onMarkerClick} 
           name={'Current Location'} 
       />
-
-        {/* <Marker
-          onClick={this.onMarkerClick}  // markers
-          name={'Dolores park'}
-          position={{lat: -1.2884, lng: 36.7}}
-        /> */}
-
 
         <Marker
           name={'trashcan'}
